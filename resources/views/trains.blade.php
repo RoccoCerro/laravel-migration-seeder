@@ -6,27 +6,27 @@
 <p>treni in partenza da oggi</p>
 <div class="container">
   <table class="my_table">
-    <tr>
+    <th>
       <td>brand</td>
-  
+
       <td>arrival_station</td>
-    
+
       <td>departure_station</td>
-    
+
       <td>date</td>
-  
+
       <td>departure_time</td>
-    
+
       <td>arrival_time</td>
 
       <td>train_code</td>
-  
+
       <td>number_of_carriages</td>
 
       <td>in_time</td>
-  
+
       <td>deleted</td>
-    </tr>
+    </th>
     @foreach ($trains as $train)
     <tr class="my_table-content">
       <td class="padding15">{{ $train->brand }}</td>
@@ -40,7 +40,7 @@
       <td class="padding15">{{ $train->in_time }}</td>
       <td class="padding15">{{ $train->deleted }}</td>
     </tr>
+    @endforeach
   </table>
-  @endforeach
 </div>
 @endsection
