@@ -22,6 +22,7 @@ return new class extends Migration
             $table->tinyInteger('number_of_carriages');
             $table->boolean('in_time')->default(true);
             $table->boolean('deleted')->default(false);
+            $table->timestamps();
         });
     }
 
