@@ -10,7 +10,7 @@ class TrainsController extends Controller
     public function trains()
     {
         $trains_all = Trains::all();
-        $trains = Trains::where('departure_time','>=', date(now()->format('Y-m-d')))->get();
+        $trains = Trains::where('departure_time','>=', date(now()))->get();
 
 
         return view('trains', compact('trains'), compact('trains_all'));

@@ -6,39 +6,28 @@
 <p>treni in partenza da oggi</p>
 <div class="container">
   <table class="my_table">
-    <th>
-      <td>brand</td>
-
-      <td>arrival_station</td>
-
-      <td>departure_station</td>
-
-      <td>date</td>
-
-      <td>departure_time</td>
-
-      <td>arrival_time</td>
-
-      <td>train_code</td>
-
-      <td>number_of_carriages</td>
-
-      <td>in_time</td>
-
-      <td>deleted</td>
-    </th>
+    <tr>
+      <th>brand</th>
+      <th>arrival_station</th>
+      <th>departure_station</th>
+      <th>departure_time</th>
+      <th>arrival_time</th>
+      <th>train_code</th>
+      <th>number_of_carriages</th>
+      <th>in_time</th>
+      <th>deleted</th>
+    </tr>
     @foreach ($trains as $train)
     <tr class="my_table-content">
-      <td class="padding15">{{ $train->brand }}</td>
-      <td class="padding15">{{ $train->arrival_station}}</td>
-      <td class="padding15">{{ $train->departure_station }}</td>
-      <td class="padding15">{{ $train->date }}</td>
-      <td class="padding15">{{ $train->departure_time }}</td>
-      <td class="padding15">{{ $train->arrival_time }}</td>
-      <td class="padding15">{{ $train->train_code }}</td>
-      <td class="padding15">{{ $train->number_of_carriages }}</td>
-      <td class="padding15">{{ $train->in_time }}</td>
-      <td class="padding15">{{ $train->deleted }}</td>
+      <td class="">{{ $train->brand }}</td>
+      <td class="">{{ $train->arrival_station}}</td>
+      <td class="">{{ $train->departure_station }}</td>
+      <td class="">{{ $train->departure_time }}</td>
+      <td class="">{{ $train->arrival_time }}</td>
+      <td class="">{{ $train->train_code }}</td>
+      <td class="">{{ $train->number_of_carriages }}</td>
+      <td class="">{{ $train->in_time }}</td>
+      <td class="">{{ $train->deleted }}</td>
     </tr>
     @endforeach
   </table>
