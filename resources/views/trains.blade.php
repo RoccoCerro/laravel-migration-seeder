@@ -1,5 +1,7 @@
 @extends("layouts.app")
 
+@section('Title', "Page")
+
 @section("main")
 <h1>Page Trains</h1>
 
@@ -32,4 +34,10 @@
     @endforeach
   </table>
 </div>
+
+<form action="{{ route('home') }}">
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary" type="submit">HomePage</button>
+    </div>
+</form>
 @endsection
